@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+/*--------GENERAL---------*/
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  color: #0097a7;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 11px;
+}
+
+.fas {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #0494a7;
+  color: #0097a7;
+}
+
+li {
+  list-style-type: none;
+}
+
+header, .education, .experience, .recommendation, .blockLeft__hobbies, .blockLeft__paragraph {
+  padding: 1em;
+}
+
+.container {
+  width: 70%;
+  height: auto;
+  display: flex;
+  box-shadow: 2px 2px 2px #c3c2c2;
+  border-radius: 20px;
+}
+@media screen and (max-width: 599px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 769px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.icon {
+  width: 10%;
+}
+
+/*------left side-------*/
+.blockLeft {
+  background-color: #0494a7;
+  width: 30%;
+  height: auto;
+}
+.blockLeft__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.blockLeft__img img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+.blockLeft__img img:hover {
+  border: 2px solid white;
+}
+.blockLeft__heading {
+  background-color: #263238;
+  text-align: center;
+  padding: 0.2em;
+  border-radius: 5px;
+}
+.blockLeft__heading:hover {
+  color: white;
+}
+.blockLeft .blockLeft__ul {
+  padding: 1em;
+}
+.blockLeft li {
+  margin-bottom: 20px;
+  color: #263238;
+}
+.blockLeft__paragraph {
+  color: #263238;
+}
+.blockLeft .fab, .blockLeft .fa-music, .blockLeft .fa-running, .blockLeft .fa-camera-retro {
+  font-size: 25px;
+  color: #263238;
+  border: 2px solid #263238;
+  padding: 0.2em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.blockLeft .fab:hover, .blockLeft .fa-music:hover, .blockLeft .fa-running:hover, .blockLeft .fa-camera-retro:hover {
+  color: white;
+}
+@media screen and (max-width: 599px) {
+  .blockLeft .fab, .blockLeft .fa-music, .blockLeft .fa-running, .blockLeft .fa-camera-retro {
+    color: #0097a7;
+    border: 2px solid #0097a7;
+  }
+}
+.blockLeft .fab {
+  font-size: 25px;
+  color: #263238;
+  border: 2px solid #263238;
+  padding: 0.2em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.blockLeft .fab:hover {
+  color: white;
+}
+.blockLeft__hobbies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 599px) {
+  .blockLeft {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 120px;
+    padding-top: 1em;
+    background: linear-gradient(#0494a7, white);
+  }
+}
+
+/*-----------right side---------*/
+.blockRight {
+  width: 70%;
+  margin-top: 2%;
+}
+.blockRight span {
+  color: #0494a7;
+}
+.blockRight h3 {
+  color: #6b6868;
+  font-weight: bold;
+}
+@media screen and (max-width: 599px) {
+  .blockRight h3 {
+    color: #0494a7;
+  }
+}
+.blockRight h4 {
+  color: #6b6868;
+}
+@media screen and (max-width: 599px) {
+  .blockRight h4 {
+    color: rgba(20, 110, 122, 0.664);
+  }
+}
+.blockRight p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: #6b6868;
+}
+.blockRight .p {
+  margin-left: 20px;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .p {
+    margin: auto;
+  }
+}
+.blockRight .fa-suitcase, .blockRight .fa-pencil-alt, .blockRight .fa-award {
+  color: #0494a7;
+}
+.blockRight header .name {
+  font-size: 2em;
+}
+.blockRight header p {
+  font-size: 1em;
+}
+.blockRight header .headerDivider {
+  width: 50px;
+  height: 2px;
+  background: #0494a7;
+  margin-top: 0.8em;
+}
+@media screen and (max-width: 599px) {
+  .blockRight header .headerDivider {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .blockRight header {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+  }
+  .blockRight header .name {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .blockRight {
+    width: 100%;
+    height: auto;
+  }
+  .blockRight ul {
+    display: block;
+    padding: 0.5em;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 1px 1px #0097a7;
+    cursor: pointer;
+  }
+  .blockRight ul:hover {
+    box-shadow: 1px 2px #0097a7;
+  }
+  .blockRight header .name {
+    font-size: 1.5em;
+  }
+  .blockRight header p {
+    font-size: 0.8em;
+  }
+}
+.blockRight .education {
+  height: auto;
+}
+.blockRight .education ul {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .education ul {
+    display: block;
+  }
+}
+.blockRight .education .educationLeft {
+  margin-right: 30px;
+  width: 30%;
+  display: flex;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .education .educationLeft {
+    width: 100%;
+  }
+}
+.blockRight .education .educationRight {
+  width: 70%;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .education .educationRight {
+    width: 100%;
+  }
+}
+.blockRight .experience {
+  height: auto;
+}
+.blockRight .experience ul {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .experience ul {
+    display: block;
+  }
+}
+.blockRight .experienceLeft {
+  width: 30%;
+  margin-right: 30px;
+  display: flex;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .experienceLeft {
+    width: 100%;
+  }
+}
+.blockRight .experienceRight {
+  width: 70%;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .experienceRight {
+    width: 100%;
+  }
+}
+.blockRight .fa-dot-circle, .blockRight .fa-circle {
+  color: #0097a7;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .fa-dot-circle, .blockRight .fa-circle {
+    display: none;
+  }
+}
+.blockRight .fa-dot-circle {
+  font-size: 0.6em;
+}
+.blockRight .fa-circle {
+  font-size: 0.5em;
+}
+
+.recommendation {
+  height: auto;
+}
+.recommendation ul {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendation li {
+  padding: 1em;
+  color: grey;
+}
+
+footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
